@@ -29,6 +29,11 @@ ifneq ($(filter disco_f746ng,$(ALL_TAGS)),)
     LCD_DISCO_F746NG.lib
 endif
 
+ifneq ($(filter disco_h747i,$(ALL_TAGS)),)
+  MBED_PROJECT_FILES += \
+    BSP_DISCO_H747I.lib
+endif
+
 $(eval $(call microlite_test,image_recognition,\
 $(IMAGE_RECOGNITION_SRCS),$(IMAGE_RECOGNITION_HDRS)))
 
