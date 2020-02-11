@@ -14,6 +14,7 @@ limitations under the License.
 ==============================================================================*/
 
 #include "tensorflow/lite/micro/examples/image_recognition/disco/display_util.h"
+#include "stm32h747i_discovery_lcd.h"
 
 #include <stdint.h>
 #include <cstdio>
